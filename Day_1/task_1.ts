@@ -14,21 +14,6 @@ function processInput(inputStr: string): number {
   });
 
   return sum;
-
-  /* let array = inputStr.split('').map(c => parseInt(c));
-
-    let sum = 0;
-
-    for (let i = 0; i < array.length; i++) {
-        let currentDigit = array[i];
-        let nextDigit = array.length - 1 === i ? array[0] : array[i + 1]; // Needs to wrap if there is no next digit in array.
-
-        if (currentDigit === nextDigit) {
-            sum += currentDigit;
-        }
-    }
-
-    return sum; */
 }
 
 console.log("Answer:", processInput("+1\n+1\n+1"), "Expected:", 3);
