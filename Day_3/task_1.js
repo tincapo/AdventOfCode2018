@@ -24,10 +24,6 @@ var Task1;
                 grid[x][y] = 0;
             }
         }
-        let lowX = gridXsize;
-        let highX = 0;
-        let lowY = gridYsize;
-        let highY = 0;
         lineArray.forEach((line) => {
             const claimId = parseInt(line.slice(line.indexOf("#") + 1, line.indexOf("@")));
             const x = parseInt(line.slice(line.indexOf("@") + 1, line.indexOf(",")));
@@ -37,16 +33,6 @@ var Task1;
             for (let posX = x; posX < x + xSize; posX++) {
                 for (let posY = y; posY < y + ySize; posY++) {
                     grid[posX][posY] = grid[posX][posY] + 1;
-                    if (grid[posX][posY] >= 2) {
-                        if (posX < lowX)
-                            lowX = posX;
-                        if (posX > highX)
-                            highX = posX;
-                        if (posY < lowY)
-                            lowY = posY;
-                        if (posY > highY)
-                            highY = posY;
-                    }
                 }
             }
         });
