@@ -1,4 +1,4 @@
-namespace Task2 {
+namespace Task1 {
   function processInput(inputStr: string): number {
     const input: string = inputStr.split("\n")[0];
 

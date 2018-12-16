@@ -1,5 +1,5 @@
-var Task2;
-(function (Task2) {
+var Task1;
+(function (Task1) {
     function processInput(inputStr) {
         const input = inputStr.split("\n")[0];
         let inputArr = input.split("");
@@ -33,5 +33,5 @@ var Task2;
     let fs = require("fs");
     let input = fs.readFileSync("./Day_5/input.txt", "utf8");
     console.log("Answer:", processInput(input));
-})(Task2 || (Task2 = {}));
+})(Task1 || (Task1 = {}));
 //# sourceMappingURL=task_1.js.map
